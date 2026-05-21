@@ -1,0 +1,18 @@
+.main-banner {
+  background-color: #f8f9fa;
+  padding: 20px;
+  /* text-align: center; */
+  background-color:  #5543E2;
+  border-radius: 18px;
+}
+.main-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+p{
+  font-size: 18px;
+  width: 500px;
+  padding: 2px;
+}

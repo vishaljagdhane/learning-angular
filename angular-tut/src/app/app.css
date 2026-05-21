@@ -1,0 +1,6 @@
+.main-continer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 10px;
+}
