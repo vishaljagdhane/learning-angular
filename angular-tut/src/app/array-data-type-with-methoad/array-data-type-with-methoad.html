@@ -1,0 +1,190 @@
+<div class="main-banner">
+
+  <h1>Angular Array Data Type With Methods</h1>
+
+  <div class="content-data">
+
+    <!-- Array Introduction -->
+    <div class="datatype-card">
+      <h2>What is an Array?</h2>
+
+      <p>
+        An Array is used to store multiple values in a single variable.
+      </p>
+
+      <code>
+        colors: string[] = ['Red', 'Green', 'Blue'];
+      </code>
+
+      <p>
+        Output: {{ colors }}
+      </p>
+    </div>
+
+    <!-- Push -->
+    <div class="datatype-card">
+      <h2>1. push()</h2>
+
+      <p>
+        Adds one or more elements to the end of an array.
+      </p>
+
+      <code>
+        colors.push('Yellow');
+      </code>
+
+      <p>
+        Result: ['Red', 'Green', 'Blue', 'Yellow']
+      </p>
+    </div>
+
+    <!-- Pop -->
+    <div class="datatype-card">
+      <h2>2. pop()</h2>
+
+      <p>
+        Removes the last element from an array.
+      </p>
+
+      <code>
+        colors.pop();
+      </code>
+
+      <p>
+        Result: ['Red', 'Green']
+      </p>
+    </div>
+
+    <!-- Shift -->
+    <div class="datatype-card">
+      <h2>3. shift()</h2>
+
+      <p>
+        Removes the first element from an array.
+      </p>
+
+      <code>
+        colors.shift();
+      </code>
+
+      <p>
+        Result: ['Green', 'Blue']
+      </p>
+    </div>
+
+    <!-- Unshift -->
+    <div class="datatype-card">
+      <h2>4. unshift()</h2>
+
+      <p>
+        Adds elements at the beginning of an array.
+      </p>
+
+      <code>
+        colors.unshift('Black');
+      </code>
+
+      <p>
+        Result: ['Black', 'Red', 'Green', 'Blue']
+      </p>
+    </div>
+
+    <!-- Splice -->
+    <div class="datatype-card">
+      <h2>5. splice()</h2>
+
+      <p>
+        Adds or removes elements from any position.
+      </p>
+
+      <code>
+        colors.splice(1, 1);
+      </code>
+
+      <p>
+        Result: ['Red', 'Blue']
+      </p>
+    </div>
+
+    <!-- Map -->
+    <div class="datatype-card">
+      <h2>6. map()</h2>
+
+      <p>
+        Creates a new array by transforming each element.
+      </p>
+
+      <code>
+        numbers.map(num => num * 2);
+      </code>
+
+      <p>
+        Result: [2, 4, 6, 8]
+      </p>
+    </div>
+
+    <!-- Filter -->
+    <div class="datatype-card">
+      <h2>7. filter()</h2>
+
+      <p>
+        Creates a new array with elements that match a condition.
+      </p>
+
+      <code>
+        numbers.filter(num => num > 2);
+      </code>
+
+      <p>
+        Result: [3, 4]
+      </p>
+    </div>
+
+    <!-- Length -->
+    <div class="datatype-card">
+      <h2>8. length</h2>
+
+      <p>
+        Returns the total number of elements in an array.
+      </p>
+
+      <code>
+        colors.length;
+      </code>
+
+      <p>
+        Result: 3
+      </p>
+    </div>
+    <div class="datatype-card">
+      <h2>1) Map Method</h2>
+
+      <p>
+       How to Array map using ngFor methoad.
+      </p>
+      <p>
+      This is array using string NameData: string[] = ['Vishal', 'Jagdhane', 'Angular', 'TypeScript'];
+      </p>
+      <p>
+  This is array map method using ngFor: {{ NameData.map(name => name.toUpperCase()) }}
+      </p>
+
+      <code>
+        <!-- numbers.map(num => num * 2); -->
+      <ul>
+<ul>
+  @for(item of ArrayData; track item) {
+    <li>{{ item }}</li>
+  }
+</ul>
+</ul>
+      </code>
+
+      <p>
+        <!-- Result: 3 -->
+      </p>
+    </div>
+
+  </div>
+
+</div>

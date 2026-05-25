@@ -4,11 +4,13 @@ import { Login } from './login/login';
 import { Banner } from './banner/banner';
 import { Printvalue } from './printvalue/printvalue';
 import { DataType } from './data-type/data-type';
+import { ArrayDataTypeWithMethoad } from './array-data-type-with-methoad/array-data-type-with-methoad';
+import { OnClickFunction } from './on-click-function/on-click-function';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Banner, Login, Printvalue,DataType],
+  imports: [RouterOutlet, Banner, Login, Printvalue,DataType,ArrayDataTypeWithMethoad,OnClickFunction],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
