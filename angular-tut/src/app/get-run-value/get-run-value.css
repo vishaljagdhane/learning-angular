@@ -1,0 +1,94 @@
+.main-banner {
+  background: linear-gradient(135deg, #5543E2, #7B68EE);
+  min-height: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-group input {
+  width: 350px;
+  max-width: 100%;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.input-group button {
+  padding: 15px 28px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #5543E2;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-group button:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
+}

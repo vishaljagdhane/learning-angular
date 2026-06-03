@@ -1,0 +1,97 @@
+.main-banner {
+  background-color: #f8f9fa;
+  padding: 20px;
+  /* text-align: center; */
+  background-color:  #5543E2;
+  border-radius: 18px;
+}
+.main-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* Table Container */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+/* Table */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.custom-table thead {
+  background: #5543E2;
+  color: #fff;
+}
+
+.custom-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Rows */
+.custom-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Alternate Row Color */
+.custom-table tbody tr:nth-child(even) {
+  background: #f8f9ff;
+}
+
+/* Hover Effect */
+.custom-table tbody tr:hover {
+  background: #eef2ff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Status Badge Example */
+.status-active {
+  background: #d4edda;
+  color: #155724;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.table-heading{
+    padding: 10px;
+    font-size: 18px;    
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

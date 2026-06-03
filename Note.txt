@@ -1,0 +1,139 @@
+# Angular Project Creation Notes
+
+## 1. Install Node.js
+
+Download and install Node.js (LTS Version)
+
+Check installation:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## 2. Install Angular CLI
+
+```bash
+npm install -g @angular/cli
+```
+
+Check Angular version:
+
+```bash
+ng version
+```
+
+---
+
+## 3. Create Angular Project
+
+```bash
+ng new my-angular-app
+```
+
+Options:
+
+* Angular Routing → Yes (y)
+* Stylesheet → CSS
+
+---
+
+## 4. Open Project Folder
+
+```bash
+cd my-angular-app
+```
+
+---
+
+## 5. Run Angular Project
+
+```bash
+ng serve
+```
+
+OR
+
+```bash
+ng serve --open
+```
+
+Application URL:
+
+```text
+http://localhost:4200
+```
+
+---
+
+# Important Angular Commands
+
+## Create Component
+
+```bash
+ng generate component home
+```
+
+Shortcut:
+
+```bash
+ng g c home
+```
+
+---
+
+## Create Service
+
+```bash
+ng generate service data
+```
+
+Shortcut:
+
+```bash
+ng g s data
+```
+
+---
+
+## Build Project
+
+```bash
+ng build
+```
+
+---
+
+# Angular Folder Structure
+
+```text
+src/
+app/
+assets/
+node_modules/
+```
+
+Main files:
+
+```text
+app.component.ts
+app.component.html
+app.module.ts
+```
+
+---
+
+# Full Setup Commands
+
+```bash
+npm install -g @angular/cli
+
+ng new demo-app
+
+cd demo-app
+
+ng serve --open
+```
+cd 

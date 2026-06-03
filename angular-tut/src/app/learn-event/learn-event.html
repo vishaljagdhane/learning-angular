@@ -1,0 +1,66 @@
+<div class="main-banner">
+  <div class="banner-content">
+    <h1 class="title">I am event component</h1>
+    <!-- <div>
+        {{ClickButtonEvent()}}
+</div> -->
+    <!-- <table class="event-table">
+      <tr>
+        <th>Event Name</th>
+        <th>Event Description</th>
+        <th>How to use </th>
+      </tr>
+
+      <tr>
+        <td>click</td>
+        <td>Triggered when an element is clicked.</td>
+        <td>Use Button  <button (click)="ClickButtonEvent()">Click Me</button></td>
+      </tr>
+
+      <tr>
+        <td>keyup</td>
+        <td>Triggered when a key is released.</td>
+      </tr>
+
+      <tr>
+        <td>change</td>
+        <td>Triggered when an input value changes.</td>
+      </tr>
+    </th>
+    </table> -->
+  
+<table class="event-table">
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Event Description</th>
+      <th>How to use</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>click</td>
+      <td>Triggered when an element is clicked.</td>
+      <td>
+        Use Button :- button (click)="ClickButtonEvent()">Use Button Tag 
+        <button (click)="ClickButtonEvent()">Click Me</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>keyup</td>
+      <td>Triggered when a key is released.</td>
+      <td>Use (keyup) on input field     <input type="text" placeholder="Keyup Event Example" (keyup)="KeyEvent($event)"></td>
+
+    </tr>
+
+    <tr>
+      <td>change</td>
+      <td>Triggered when input value changes.</td>
+      <td>Use (change) event</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>

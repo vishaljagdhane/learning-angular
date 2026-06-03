@@ -1,0 +1,54 @@
+<div class="main-banner">
+  <div class="banner-content">
+    <h1>Angular Data Types</h1>
+<p>Following data types are used in Angular: String , Number, Boolean, Array, Object</p>
+<div class="table-container">
+<Table border="1" class="custom-table">
+    <thead>
+        <tr>
+            <th class="table-heading">Data Type</th>
+            <th class="table-heading">Description</th>
+            <th class="table-heading">Example</th>
+            <th class="table-heading">Using app.tsx file</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>String</td>
+            <td>A sequence of characters enclosed in single or double quotes.</td>
+            <td>name:String ="Hello Angular"</td>
+            <td>{{name}}</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>A numeric value that can be an integer or a floating-point number.</td>
+            <td>age: number = 25;</td>
+            <td>{{age}}</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>A logical value that can be either true or false.</td>
+            <td>isAngularFun: boolean = true;</td>
+            <td>{{isAngularFun}}</td>
+        </tr>
+        <tr>
+            <td>Array</td>
+            <td>A collection of values stored in a single variable, accessed by index.</td>
+            <td>fruits: string[] = ['Apple', 'Banana', 'Orange'];</td>
+            <td><ul>
+<li *ngFor="let fruit of fruits">
+  {{ fruit }}
+</li>
+</ul></td>
+        </tr>
+        <tr>
+            <td>Object</td>
+            <td>A collection of key-value pairs, where each key is a string and the value can be any data type.</td>
+           <td>person: &#123; name: string; age: number; &#125; = &#123; name: 'John', age: 30 &#125;;</td>
+           <td>{{person.name}} is {{person.age}} years old.</td>
+        </tr>
+    </tbody>    
+    </Table>
+  </div>
+
+</div>

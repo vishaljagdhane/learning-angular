@@ -1,0 +1,25 @@
+<div class="main-banner">
+  <div class="banner-content">
+
+    <h1>Get Run Time Value In Text Field</h1>
+
+    <p>
+      Enter a value in the text field and click the button to get the runtime value.
+    </p>
+
+    <div class="input-group">
+      <input
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Enter value..."
+      >
+<!--
+      <button (click)="getRunValue()">
+        Get Value
+      </button> -->
+
+      <h1> Text filed Value:{{name}}</h1>
+    </div>
+
+  </div>
+</div>
