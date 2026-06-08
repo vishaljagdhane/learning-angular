@@ -1,0 +1,165 @@
+/* Core Layout & Reset */
+.main-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Banner Card Container */
+.banner-content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+/* Typography */
+.banner-content h1 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures borders snap to the border-radius */
+  border: 1px solid #e2e8f0;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #4a5568;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+td {
+  color: #4a5568;
+  font-size: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+/* Zebra Striping & Hover Effects */
+tr:nth-child(even) td {
+  background-color: #f7fafc;
+}
+
+tr:last-child td {
+  border-bottom: none; /* Removes bottom border from the last row */
+}
+
+tr:hover td {
+  background-color: #edf2f7;
+}
+
+/* Right-align numbers for better readability */
+th:last-child, 
+td:last-child {
+  text-align: right;
+}
+.pratical-example {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pratical-example h1 {
+    color: #1976d2;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 10px;
+}
+
+.pratical-example p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.ngif-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 5px solid #1976d2;
+    border-radius: 8px;
+}
+
+.ngif-container h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.ngif-container pre {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.ngif-container strong {
+    color: #1976d2;
+}
+
+.code-output {
+    margin-top: 15px;
+    padding: 12px;
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    border-radius: 6px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .pratical-example {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .pratical-example h1 {
+        font-size: 1.5rem;
+    }
+
+    .ngif-container {
+        padding: 15px;
+    }
+
+    .ngif-container pre {
+        font-size: 13px;
+    }
+}

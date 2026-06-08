@@ -1,1 +1,210 @@
-<p>condition-comp works!</p>
+<div class="main-banner">
+    <div class="banner-content">
+        <h1>Angular Conditional Statements Tutorial</h1>
+        <!-- <p>
+  This component demonstrates Angular conditional rendering using
+  <strong>*ngIf</strong> (Angular 2-16) and the modern
+  <strong>@if</strong> syntax (Angular 17+). Learn how to use
+  if, else, else if, logical operators (&&, ||), toggle conditions,
+  and role-based UI rendering with real-world examples.
+</p> -->
+
+        <p>
+            This component demonstrates Angular conditional rendering using
+            <strong>ngIf</strong> (Angular 2-16) and the modern
+            <strong>if</strong> syntax (Angular 17+). Learn how to use
+            if, else, else if, logical operators (&&, ||), toggle conditions,
+            and role-based UI rendering with real-world examples.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Version wise condtion </th>
+                    <th>Description</th>
+                    <th>How to write UI example </th>
+                    <th>Real Example</th>
+                    <!-- <th>Button Example </th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*ngIf (Angular 2 - 16)</td>
+                    <td>Used to show or hide elements based on a condition.</td>
+                    <td>
+                        &lt;div *ngIf="isLoggedIn"&gt;
+                        Welcome User
+                        &lt;/div&gt;
+                    </td>
+                    <td>
+                        <p (click)="toggleLogin()">Show dashboard only after successful login.</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>if - else if</td>
+                    <td>Used for multiple conditions.</td>
+                    <td>
+                        @if (marks >= 90) {<br>
+                        &nbsp;&nbsp;Grade A<br>
+                        } @else if (marks >= 70) {<br>
+                        &nbsp;&nbsp;Grade B<br>
+                        } @else {<br>
+                        &nbsp;&nbsp;Fail<br>
+                        }
+                    </td>
+                    <td>Student Result Management System.</td>
+                </tr>
+
+
+
+
+            </tbody>
+        </table>
+
+        <div class="pratical-example">
+            <h1>Practical Example: Using *ngIf</h1>
+
+            <p>
+                The <strong>*ngIf</strong> directive is used to show or hide HTML elements
+                based on a condition.
+            </p>
+            <div class="ngif-container">
+                <p>
+                    First, declare a Boolean variable in the component's TypeScript file:
+                </p>
+
+                <pre>
+ngifCondition = false;
+</pre>
+                <p>
+                    By default, the value is <strong>false</strong>, so the element will not be displayed.
+                    When the value changes to <strong>true</strong>, Angular renders the element in the DOM.
+                </p>
+
+                <button (click)="hideNgIf()"> check condition </button>
+                <button (click)="showNgIf()"> Show *ngIF </button>
+
+                <h1 *ngIf="ngifCondition">I am visible!</h1>
+
+            </div>
+
+
+        </div>
+
+        <div class="pratical-example">
+
+            <h1>Practical Example: Using &#64;if (Angular 17+)</h1>
+
+            <p>
+                The <strong>&#64;if</strong> control flow statement is used to
+                show or hide HTML elements based on a condition.
+            </p>
+
+            <div class="ngif-container">
+
+                <h3>Step 1: Declare a Boolean Variable</h3>
+
+                <pre>
+ngifCondition = false;
+        </pre>
+
+                <p>
+                    By default, the value is <strong>false</strong>, so the content
+                    will not be displayed.
+                </p>
+
+                <button (click)="showNgIf()">
+                    Show Content
+                </button>
+
+                <button (click)="hideNgIf()">
+                    Hide Content
+                </button>
+
+                <br><br>
+
+                <h3>Live Example</h3>
+
+                @if (ngifCondition) {
+                <h1>I am visible! 🎉</h1>
+                } @else {
+                <h3>Content is hidden.</h3>
+                }
+
+                <hr>
+
+                <h3>Code Example</h3>
+
+                <pre>
+&#64;if (ngifCondition) &#123;
+    &lt;h1&gt;I am visible!&lt;/h1&gt;
+&#125; &#64;else &#123;
+    &lt;h3&gt;Content is hidden.&lt;/h3&gt;
+&#125;
+        </pre>
+
+            </div>
+
+        </div>
+      <div class="pratical-example">
+
+    <h1>Practical Example: Using &#64;if (Angular 17+) with TypeScript Logic</h1>
+
+    <p>
+        In real-world Angular applications, business logic and conditions are
+        usually written in the <strong>TypeScript (.ts)</strong> file rather than
+        directly in the HTML template.
+    </p>
+
+    <p>
+        The component handles all decision-making using
+        <strong>if, else if, and else</strong> statements, while the HTML
+        template is responsible only for displaying the result.
+    </p>
+
+    <p>
+        This approach improves code readability, maintainability, and follows
+        Angular best practices by separating business logic from the user
+        interface.
+    </p>
+
+    <div class="ngif-container">
+
+        <h3>Example Scenario</h3>
+
+        <p>
+            A user's login status is checked in the TypeScript file. Based on
+            the result, a message such as <strong>"Welcome User"</strong> or
+            <strong>"Please Login"</strong> is displayed on the screen.
+        </p>
+
+        <p>
+            Similarly, conditions can be used to calculate grades, control
+            permissions, validate forms, manage user roles, and show or hide
+            application features.
+        </p>
+
+        <h3>Benefits of Writing Conditions in TypeScript</h3>
+
+        <ul>
+            <li>✔ Cleaner HTML templates</li>
+            <li>✔ Easier debugging and maintenance</li>
+            <li>✔ Better separation of concerns</li>
+            <li>✔ Reusable business logic</li>
+            <li>✔ Industry-standard Angular development practice</li>
+        </ul>
+        <div class="code-example">
+
+        <h1>{{messge}}</h1>
+
+        <button (click)="toggleUserLogin()">Toggle Login Status</button>
+            </div>
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>

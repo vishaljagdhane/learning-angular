@@ -10,12 +10,13 @@ import { LearnEvent } from './learn-event/learn-event';
 import { TypeData } from './type-data/type-data';
 import { Counter } from './counter/counter';
 import { FunctionCalling } from './function-calling/function-calling';
+import { ConditionComp } from './condition-comp/condition-comp';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter,FunctionCalling,],
+  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter,FunctionCalling,ConditionComp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
