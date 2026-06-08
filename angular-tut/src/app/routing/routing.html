@@ -1,0 +1,164 @@
+<div class="pratical-example">
+
+    <h1>Practical Example: Angular Routing</h1>
+
+    <p>
+        Angular Routing enables navigation between different components
+        without reloading the entire page. In this example, users can
+        move between Home, About, Contact, and Login pages using
+        <strong>RouterLink</strong> and view the selected component
+        inside the <strong>RouterOutlet</strong>.
+    </p>
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>ROUTING CONCEPT</th>
+            <th>DESCRIPTION</th>
+            <th>HOW TO WRITE UI EXAMPLE</th>
+            <th>REAL EXAMPLE</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>RouterLink</td>
+            <td>
+                Used to navigate from one page to another.
+            </td>
+            <td>
+                &lt;a routerLink="/home"&gt;Home&lt;/a&gt;
+            </td>
+            <td>
+                Navigate to Home, About, Contact, and Login pages.
+            </td>
+        </tr>
+
+        <tr>
+            <td>RouterOutlet</td>
+            <td>
+                Displays the component associated with the current route.
+            </td>
+            <td>
+                &lt;router-outlet&gt;&lt;/router-outlet&gt;
+            </td>
+            <td>
+                Loads the selected page dynamically.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Default Route</td>
+            <td>
+                Redirects users to a default page when the application loads.
+            </td>
+            <td>
+                path: '', component: HomeComponent
+            </td>
+            <td>
+                Open Home page automatically.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Route Parameter</td>
+            <td>
+                Pass dynamic values through the URL.
+            </td>
+            <td>
+                path: 'user/:id'
+            </td>
+            <td>
+                Employee Details Page using Employee ID.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Programmatic Navigation</td>
+            <td>
+                Navigate using TypeScript code.
+            </td>
+            <td>
+                this.router.navigate(['/home']);
+            </td>
+            <td>
+                Redirect after successful login.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Child Route</td>
+            <td>
+                Create nested routes inside a parent route.
+            </td>
+            <td>
+                children: []
+            </td>
+            <td>
+                Dashboard → Users → Profile.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Wildcard Route</td>
+            <td>
+                Handles invalid URLs and displays a 404 page.
+            </td>
+            <td>
+                path: '**'
+            </td>
+            <td>
+                Show Page Not Found screen.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Route Guard</td>
+            <td>
+                Restricts access to protected routes.
+            </td>
+            <td>
+                canActivate: [AuthGuard]
+            </td>
+            <td>
+                Allow access only after login.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lazy Loading</td>
+            <td>
+                Loads modules only when required.
+            </td>
+            <td>
+                loadChildren(...)
+            </td>
+            <td>
+                Improve application performance.
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+<div class="nav-bar">
+
+    <div class="logo">
+        Routing Example
+    </div>
+
+    <ul class="nav-links">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <!-- <li><a routerLink="/login">Login</a></li> -->
+    </ul>
+    <hr>
+
+</div>
+<router-outlet></router-outlet>
+<!-- <outer-router-outlet></outer-router-outlet> -->
+</div>

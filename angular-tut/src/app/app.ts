@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
 import { Banner } from './banner/banner';
 import { Printvalue } from './printvalue/printvalue';
@@ -11,12 +11,13 @@ import { TypeData } from './type-data/type-data';
 import { Counter } from './counter/counter';
 import { FunctionCalling } from './function-calling/function-calling';
 import { ConditionComp } from './condition-comp/condition-comp';
+import { Routing } from './routing/routing';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter,FunctionCalling,ConditionComp],
+  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter,FunctionCalling,ConditionComp,Routing,RouterOutlet,RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
