@@ -9,12 +9,13 @@ import { GetRunValue } from './get-run-value/get-run-value';
 import { LearnEvent } from './learn-event/learn-event';
 import { TypeData } from './type-data/type-data';
 import { Counter } from './counter/counter';
+import { FunctionCalling } from './function-calling/function-calling';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter],
+  imports: [ Banner,Printvalue,DataType,CallFunction,GetRunValue,LearnEvent,TypeData,Counter,FunctionCalling,],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

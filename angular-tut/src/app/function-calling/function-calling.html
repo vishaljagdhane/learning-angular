@@ -1,0 +1,71 @@
+<div class="main-banner">
+    <div class="banner-content">
+        <h1>I am Function Component </h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Real Example</th>
+                    <!-- <th>Button Example </th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Simple Function</td>
+                    <td>A basic function without parameters</td>
+                    <td> use function() open and close barkcet </td>
+                    <td>
+                        <p>{{ SimpleFunction() }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Simple Function</td>
+                    <td>This is a simple function without any parameters. return a string value.</td>
+                    <td> use function() open and close barkcet </td>
+                    <td>
+                        <p>{{ SimpleFunction() }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parameterized Function</td>
+                    <td>This is a function that accepts parameters and returns a value.</td>
+                    <td> use function(parameter) open and close barkcet </td>
+                    <td>
+                        <p>{{ ParameterizedFunction('vishal') }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parameterized Function(Passed Two numbers with addition)</td>
+                    <td>This is a function that accepts parameters and returns a value.</td>
+                    <td> use function(parameter) open and close barkcet </td>
+                    <td>
+                        <p>{{ ParameterizedFunctionPassedTwoNumbers(5,10) }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arrow Function</td>
+                    <td>
+                        A short way to write functions. It automatically keeps the value of
+                        <code>this</code> from the component.
+                    </td>
+                    <td> Arrow functon</td>
+                    <td>{{ ArrowFunction() }} </td>
+                </tr>
+                <tr>
+                    <td>On Button call Arrow Function</td>
+                    <td>
+                        A short way to write functions. It automatically keeps the value of
+                        <code>this</code> from the component.
+                    </td>
+                    <td> Arrow functon</td>
+                         <td><p>{{ message }} <br> <br><button (click)="OnclickArrrowFunction()">Update Message</button></p></td>
+          
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
